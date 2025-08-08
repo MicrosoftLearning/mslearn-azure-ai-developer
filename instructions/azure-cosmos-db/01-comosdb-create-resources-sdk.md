@@ -118,6 +118,8 @@ Now it's time to replace the template code in the **Program.cs** file using the 
     code Program.cs
     ```
 
+1. Maximize the cloud shell.
+
 1. Replace any existing code with the following code snippet. Be sure to replace the placeholder values for **documentEndpoint** and **primaryKey** following the directions in the code comments.
 
     The code provides the overall structure of the app. Review the comments in the code to get an understanding of how it works. To complete the application, you add code in specified areas later in the exercise. 
@@ -256,6 +258,8 @@ Now that the project is finished it's time to run the application and verify the
     Created item: c549c3fa-054d-40db-a42b-c05deabbc4a6
     Request charge: 6.29 RUs
     ```
+
+1. Restore the cloud shell from its maximized state. 
 
 1. In the Azure portal, navigate to the Azure Cosmos DB resource you created earlier. Select **Data Explorer** in the left navigation. In **Data Explorer**, select **myDatabase** and then expand **myContainer**. You can view the item you created by selecting **Items**.
 

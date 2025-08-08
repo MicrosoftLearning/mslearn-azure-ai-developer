@@ -89,7 +89,7 @@ After the container app environment finishes deploying, you can deploy a contain
     Container app created. Access your app at <url>
     ```
 
-To verify the deployment select the URL returned by the **az containerapp create** command to verify the container app is running.
+To verify the deployment, select the URL returned by the **az containerapp create** command to verify the container app is running.
 
 ## Clean up resources
 

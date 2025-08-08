@@ -109,7 +109,7 @@ Next, you build and push an image based on a Dockerfile.
     v1
     ```
 
-## Run the image in the ACR
+## Run the image in ACR
 
 1. Run the *sample/hello-world:v1* container image from your container registry with the **az acr run** command. The following example uses **$Registry** to specify the registry where you run the command. Replace **myContainerRegistry** with the name you used earlier.
 

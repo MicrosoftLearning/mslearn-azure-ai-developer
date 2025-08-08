@@ -30,6 +30,8 @@ In this section of the exercise you create the needed resources in Azure with th
 
 1. In the cloud shell toolbar, in the **Settings** menu, select **Go to Classic version** (this is required to use the code editor).
 
+1. Maximize the cloud shell.
+
 1. Create a resource group for the resources needed for this exercise. Replace **myResourceGroup** with a name you want to use for the resource group. You can replace **eastus2** with a region near you if needed. If you already have a resource group you want to use, proceed to the next step.
 
     ```
@@ -44,7 +46,9 @@ In this section of the exercise you create the needed resources in Azure with th
     accountName=storageacct$RANDOM
     ```
 
-1. Run the following commands to create the Azure Storage account, each account name must be unique. The first command creates a variable with a unique name for your storage account. Record the name of your account from the output of the **echo** command. 
+1. Run the following commands to create the Azure Storage account, each account name must be unique. The first command creates a variable with a unique name for your storage account. 
+
+    >**Note**: Record the name of your account from the output of the **echo** command. 
 
     ```
     az storage account create --name $accountName \
@@ -57,7 +61,7 @@ In this section of the exercise you create the needed resources in Azure with th
 
 ### Assign a role to your Microsoft Entra user name
 
-To allow your app to send and receive messages, assign your Microsoft Entra user to the **Azure Service Bus Data Owner** role at the Service Bus namespace level. This gives your user account permission to manage and access queues and topics using Azure RBAC. Perform the following steps in the cloud shell.
+To allow your app to send and receive messages, assign your Microsoft Entra user to the **Azure Storage Blob Data Owner** role at the Storage Account level. This gives your user account permission to manage and access containers and blobs using Azure RBAC. Perform the following steps in the cloud shell.
 
 1. Run the following command to retrieve the **userPrincipalName** from your account. This represents who the role will be assigned to.
 
@@ -327,7 +331,9 @@ Throughout the rest of the exercise you add code in specified areas to create th
 
 1. In the Azure portal, navigate to the Azure Storage account you created. 
 
-1. Expand **> Data storage** in the left navigation and select **Containers**.
+1. Restore the cloud shell from its maximized state. 
+
+1. Expand **> Data storage** in the left navigation pane and select **Containers**.
 
 1. Select the container the application created and you can view the blob that was uploaded.
 

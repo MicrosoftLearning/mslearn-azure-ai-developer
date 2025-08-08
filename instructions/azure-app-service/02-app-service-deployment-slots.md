@@ -77,7 +77,9 @@ In this section you create a deployment slot, modify the HTML in the app, and de
 
 ### Update code and deploy to the staging slot
 
-1. In the cloud shell, type **code index.html** to open the editor. Locate the **\<h1\>** heading tag, and change *Azure App Service - Sample Static HTML Site* to *Azure App Service Staging Slot* - or to anything else that you'd like.
+1. In the cloud shell, type **code index.html** to open the editor. 
+
+1. Locate the **\<h1\>** heading tag, and change *Azure App Service - Sample Static HTML Site* to *Azure App Service Staging Slot* - or to anything else that you'd like.
 
 1. Use the commands **ctrl-s** to save, and **ctrl-q** to exit.
 
@@ -101,7 +103,11 @@ In this section you create a deployment slot, modify the HTML in the app, and de
 
 You can perform a swap in the Azure portal with the **Swap** option in the toolbar. The **Swap** option will appear in the toolbar if you select **Overview** or **Deployment > Deployment slots** in the left menu.
 
-1. In the Azure portal, select **Swap** in the toolbar to open the **Swap** panel.
+1. Return to the tab with the Azure portal and cloud shell.
+
+1. Select **Deployment > Deployment slots** in the left menu.
+
+1. Select **Swap** in the toolbar to open the **Swap** panel.
 
 1. Review the settings in the swap panel. The **Source** should show the **-staging** slot, and the **Target** should show the default production slot.
 

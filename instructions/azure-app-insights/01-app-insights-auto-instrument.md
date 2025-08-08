@@ -126,20 +126,24 @@ To deploy the app you first need to publish it with the **dotnet publish** comma
 
 1. When the deployment is completed, select the link in the **Default domain** field located in the **Essentials** section to open the app in a new tab in your browser.
 
+1. Close the cloud shell.
+
 Now it's time to view some basic application metrics in Application Insights. Don't close this tab, you'll use it in the rest of the exercise.
 
 ## View metrics in Application Insights
 
-Return the tab with the Azure Portal and navigate to the Application Insights resource you created earlier. The **Overview** tab displays some basic charts:
+1. Return to the tab with the Azure Portal and navigate to the Application Insights resource you created earlier. 
 
-* Failed requests
-* Server response time
-* Server requests
-* Availability
+    The **Overview** tab displays some basic charts:
 
-In this section you will perform some actions in the web app and then return to this page to view the activity. The activity reporting is delayed, so it may take a few minutes for it to appear in the charts.
+    * Failed requests
+    * Server response time
+    * Server requests
+    * Availability
 
-Perform the following steps in the web app.
+    In this section you will perform some actions in the web app and then return to this page to view the activity. The activity reporting is delayed, so it may take a few minutes for it to appear in the charts.
+
+    Perform the following steps in the web app.
 
 1. Navigate between the **Home**, **+ Counter**, and **Weather** navigation options in the menu of the web app.
 

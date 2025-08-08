@@ -60,6 +60,7 @@ In this section, you use Visual Studio Code to create a local Azure Functions pr
     | Provide a function name | Enter `HttpExample`. |
     | Provide a namespace | Enter `My.Function`. |
     | Authorization level | Select **Anonymous**, which enables anyone to call your function endpoint. |
+    | How you would like to open | Select **Open in current window** |
 
     <sup>1</sup> Depending on your VS Code settings, you might need to use the **Change template filter** option to see the full list of templates.
 
@@ -75,7 +76,7 @@ Visual Studio Code integrates with Azure Functions Core tools to let you run thi
 
     ![Screenshot of the endpoint of your HTTP-triggered function is displayed in the Terminal panel.](./media/01/run-function-local.png)
 
-1. With Core Tools running, go to the **Azure: Functions** area. Under **Functions**, expand **Local Project** > **Functions**. Right-click the **HttpExample** function and select **Execute Function Now...**.
+1. With Core Tools running, go to the **Azure** area. Under **Workspace**, expand **Local Project** > **Functions**. Right-click the **HttpExample** function and select **Execute Function Now...**.
 
     ![Screenshot showing the location of the Execute Function Now... step.](./media/01/execute-function-local.png)
 
@@ -95,19 +96,21 @@ In this section you create an Azure Function App resource and deploy the functio
 
 Before you can publish your app, you must sign in to Azure. If you already signed in, go to the next section.
 
-1. If you aren't already signed in, choose the Azure icon in the Activity bar, then in the **Azure: Functions** area, choose **Sign in to Azure...**.
+1. If you aren't already signed in, choose the Azure icon in the Activity bar, then in the **Azure: Resources** area, choose **Sign in to Azure...**.
 
     ![Screenshot of the Sign in to Azure button.](./media/01/functions-sign-into-azure.png)
 
-1. When prompted in the browser, choose your Azure account and sign in using your Azure account credentials.
+1. When prompted, choose your Azure account and sign in using your Azure account credentials.
 
-1. After successfully signing in, you can close the new browser window. The subscriptions that belong to your Azure account are displayed in the Side bar.
+    >**Note**: If prompted to stay signed in, select **No, this app only**.
+
+1. After a successfull sign-in, the subscriptions that belong to your Azure account are displayed under **Resources**.
 
 ### Create resources in Azure
 
 In this section, you create the Azure resources you need to deploy your local function app.
 
-1. Choose the Azure icon in the Activity bar, then in the **Resources** area select the **Create resource...** button.
+1. Choose the Azure icon in the Activity bar, then in the **Resources** area select the **Create Resource...** button.
 
     ![Screenshot of the Create Resources button.](./media/01/create-resource.png)    
 
@@ -117,7 +120,7 @@ In this section, you create the Azure resources you need to deploy your local fu
     |--|--|
     | Select a resource to create | Select **Create Function App in Azure...** |
     | Select subscription | Select the subscription to use. *You won't see this if you only have one subscription.* |
-    | Enter a globally unique name for the function app | Type a name that is valid in a URL path, for example `myfunctionapp`. The name you type is validated to make sure that it's unique. |
+    | Enter a name for the new the function app | Type a name that is valid in a URL path, for example `myfunctionapp`. The name you type is validated to make sure that it's unique. |
     | Select a location for new resources | For better performance, select a region near you. |
     | Select a runtime stack | Select **.NET 8.0 Isolated**. |
     | Select resource authentication type | Select **Secrets** |
@@ -138,7 +141,7 @@ In this section, you create the Azure resources you need to deploy your local fu
 
 1. In the command palette, search for and run the command **Azure Functions: Deploy to Function App...**.
 
-1. Select the subscription you used when creating the resources.
+1. If you have more than one subscription, select the subscription you used when creating the resources. **Note**: This step won't be visible if you only have a single subscription.
 
 1. Select the function app you created. When prompted about overwriting previous deployments, select **Deploy** to deploy your function code to the new function app resource.
 

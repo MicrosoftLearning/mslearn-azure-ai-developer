@@ -30,6 +30,8 @@ In this section of the exercise you create the needed resources in Azure with th
 
 1. In the cloud shell toolbar, in the **Settings** menu, select **Go to Classic version** (this is required to use the code editor).
 
+1. Maximize the cloud shell.
+
 1. Create a resource group for the resources needed for this exercise. If you already have a resource group you want to use, proceed to the next step. Replace **myResourceGroup** with a name you want to use for the resource group. You can replace **eastus** with a region near you if needed.
 
     ```
@@ -361,6 +363,8 @@ Now it's time to add code to complete the application.
 1. List the secrets again to view your new addition.
 
 Enter **quit** when you are finished with the application.
+
+1. Restore the cloud shell from its maximized state. 
 
 ## Clean up resources
 
