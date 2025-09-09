@@ -267,6 +267,7 @@ Now that the project is finished it's time to run the application and verify the
 
 Now that you finished the exercise, you should delete the cloud resources you created to avoid unnecessary resource usage.
 
+1. In your browser navigate to the Azure portal [https://portal.azure.com](https://portal.azure.com); signing in with your Azure credentials if prompted.
 1. Navigate to the resource group you created and view the contents of the resources used in this exercise.
 1. On the toolbar, select **Delete resource group**.
 1. Enter the resource group name and confirm that you want to delete it.

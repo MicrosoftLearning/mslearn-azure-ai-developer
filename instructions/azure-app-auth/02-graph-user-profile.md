@@ -200,8 +200,11 @@ Now that the app is complete it's time to run it.
 
 ## Clean up resources
 
-Now that you finished the exercise, you should delete the app registration you created earlier.
+Now that you finished the exercise, you should delete the cloud resources you created to avoid unnecessary resource usage.
 
-1. In the Azure portal, navigate to the app registration you created.
-1. On the toolbar, select **Delete**.
-1. Confirm the deletion.
+1. In your browser navigate to the Azure portal [https://portal.azure.com](https://portal.azure.com); signing in with your Azure credentials if prompted.
+1. Navigate to the resource group you created and view the contents of the resources used in this exercise.
+1. On the toolbar, select **Delete resource group**.
+1. Enter the resource group name and confirm that you want to delete it.
+
+> **CAUTION:** Deleting a resource group deletes all resources contained within it. If you chose an existing resource group for this exercise, any existing resources outside the scope of this exercise will also be deleted.

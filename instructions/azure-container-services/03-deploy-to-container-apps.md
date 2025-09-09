@@ -95,6 +95,7 @@ To verify the deployment select the URL returned by the **az containerapp create
 
 Now that you finished the exercise, you should delete the cloud resources you created to avoid unnecessary resource usage.
 
+1. In your browser navigate to the Azure portal [https://portal.azure.com](https://portal.azure.com); signing in with your Azure credentials if prompted.
 1. Navigate to the resource group you created and view the contents of the resources used in this exercise.
 1. On the toolbar, select **Delete resource group**.
 1. Enter the resource group name and confirm that you want to delete it.
