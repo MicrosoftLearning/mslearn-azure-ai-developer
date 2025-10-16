@@ -34,21 +34,22 @@ In this section of the exercise you create a resource group and Azure Storage ac
     az group create --location eastus2 --name myResourceGroup
     ```
 
-1. Create a few variables for the CLI commands to use, it reduces amount of typing. Replace **myLocation** with the value you chose earlier. The APIM name needs to be a globally unique name, and the following script generates a random string. Replace **myEmail** with an email address you can access.
+1. Create a few variables for the CLI commands to use, it reduces amount of typing. Replace **<myLocation>** with the value you chose earlier. The APIM name needs to be a globally unique name, and the following script generates a random string. Replace **<myEmail>** with an email address you can access. Replace **<myResourceGroup>** with the value you chose earlier.
 
     ```bash
     myApiName=import-apim-$RANDOM
-    myLocation=myLocation
-    myEmail=myEmail
+    myLocation=<myLocation>
+    myEmail=<myEmail>
+    myResourceGroup=<myResourceGroup>
     ```
 
-1. Create an APIM instance. The **az apim create** command is used to create the instance. Replace **myResourceGroup** with the value you chose earlier.
+1. Create an APIM instance. The **az apim create** command is used to create the instance. 
 
     ```bash
     az apim create -n $myApiName \
         --location $myLocation \
         --publisher-email $myEmail  \
-        --resource-group myResourceGroup \
+        --resource-group $myResourceGroup \
         --publisher-name Import-API-Exercise \
         --sku-name Consumption 
     ```
@@ -75,22 +76,10 @@ This section shows how to import and publish an OpenAPI specification backend AP
 
     | Setting | Value | Description |
     |--|--|--|
-    | **OpenAPI Specification** | `https://bigconference.azurewebsites.net/` | References the service implementing the API, requests are forwarded to this address. Most of the necessary information in the form is automatically populated after you enter this value. |
-    | **URL scheme** | Select **HTTPS**. | Defines the security level of the HTTP protocol accepted by the API. |
+    | **OpenAPI Specification** | `https://petstore3.swagger.io/api/v3/openapi.json` | References the service implementing the API, requests are forwarded to this address. Most of the necessary information in the form is automatically populated after you enter this value. |
+    | **URL scheme** | Ensure **HTTPS** is selected. | Defines the security level of the HTTP protocol accepted by the API. |
 
 1. Select **Create**.
-
-## Configure the API settings
-
-The *Big Conference API* is created. Now it's time to configure the API settings. 
-
-1. Select **Settings** in menu.
-
-1. Enter `https://bigconference.azurewebsites.net/` in the **Web service URL** field.
-
-1. Deselect the **Subscription required** checkbox.
-
-1. Select **Save**.
 
 ## Test the API
 
@@ -98,11 +87,13 @@ Now that the API has been imported and configured it's time to test the API.
 
 1. Select **Test** in the menu bar. This will display all of the operations available in the API.
 
-1. Search for, and select the **Speakers_Get** operation. 
+1. Search for, and select the **Find Pets by status.** operation. 
 
 1. Select **Send**. You may need to scroll down on the page to view the HTTP response.
 
     Backend responds with **200 OK** and some data.
+
+1. If you want to try different results you can select a different **status** in the **Template parameters** section. Select the dropdown under **VALUE** and choose a different status. Then, select **Send** to see the new results.
 
 ## Clean up resources
 
