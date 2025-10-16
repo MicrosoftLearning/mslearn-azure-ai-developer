@@ -63,6 +63,8 @@ In this section, you use Visual Studio Code to create a local Azure Functions pr
 
     <sup>1</sup> Depending on your VS Code settings, you might need to use the **Change template filter** option to see the full list of templates.
 
+1. When prompted to *Select how you would like to open your project* select **Open in current window**.
+
 1. Visual Studio Code uses the provided information and generates an Azure Functions project with an HTTP trigger. You can view the local project files in the Explorer.
 
     > **Note**: If VS Code displays a popup with the title **Do you trust the authors of the files in this folder?**, select the **Yes, I trust the authors** button.
@@ -73,7 +75,11 @@ Visual Studio Code integrates with Azure Functions Core tools to let you run thi
 
 1. Make sure the terminal is open in Visual Studio Code. You can open the terminal by selecting **Terminal** and then **New Terminal** in the menu bar. 
 
-1. Press **F5** to start the function app project in the debugger. Output from Core Tools is displayed in the **Terminal** panel. Your app starts in the **Terminal** panel. You can see the URL endpoint of your HTTP-triggered function running locally.
+1. Press **F5** to start the function app project in the debugger. If you are prompted to choose a storage account select **Skip for now**.
+
+    ![Screenshot of the dialog box prompting for storage account creation.](./media/01/select-storage-acct.png)
+
+1. Output from Core Tools is displayed in the **Terminal** panel. Your app starts in the **Terminal** panel. You can see the URL endpoint of your HTTP-triggered function running locally.
 
     ![Screenshot of the endpoint of your HTTP-triggered function is displayed in the Terminal panel.](./media/01/run-function-local.png)
 
@@ -81,9 +87,9 @@ Visual Studio Code integrates with Azure Functions Core tools to let you run thi
 
     ![Screenshot showing the location of the Execute Function Now... step.](./media/01/execute-function-local.png)
 
-1. In **Enter request body** type the request message body value of `{ "name": "Azure" }`. Press **Enter** to send this request message to your function. When the function executes locally and returns a response, a notification is raised in Visual Studio Code.
+1. In **Enter request body** you see the request message body value of `{ "name": "Azure" }`. Press **Enter** to send this request message to your function. When the function executes locally and returns a response, a notification is raised in Visual Studio Code.
 
-    select the notification bell icon to view the notification. Information about the function execution is shown in **Terminal** panel.
+    Select the notification bell icon to view the notification. Information about the function execution is shown in **Terminal** panel.
 
 1. Press **Shift + F5** to stop Core Tools and disconnect the debugger.
 
@@ -154,7 +160,7 @@ In this section, you create the Azure resources you need to deploy your local fu
 
     ![Screenshot of the Execute Function Now option.](./media/01/execute-function-remote.png)
 
-1. In **Enter request body** you see the request message body value of `{ "name": "Azure" }`. Press Enter to send this request message to your function.
+1. In **Enter request body** you see the request message body value of `{ "name": "Azure" }`. Press **Enter** to send this request message to your function.
 
 1. When the function executes in Azure and returns a response, a notification is raised in Visual Studio Code. select the notification bell icon to view the notification.
 
