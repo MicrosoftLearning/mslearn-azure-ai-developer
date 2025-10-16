@@ -77,19 +77,9 @@ This section shows how to import and publish an OpenAPI specification backend AP
     | Setting | Value | Description |
     |--|--|--|
     | **OpenAPI Specification** | `https://petstore3.swagger.io/api/v3/openapi.json` | References the service implementing the API, requests are forwarded to this address. Most of the necessary information in the form is automatically populated after you enter this value. |
-    | **URL scheme** | Select **HTTPS**. | Defines the security level of the HTTP protocol accepted by the API. |
+    | **URL scheme** | Ensure **HTTPS** is selected. | Defines the security level of the HTTP protocol accepted by the API. |
 
 1. Select **Create**.
-
-## Configure the API settings
-
-The *Petstore* API is created. Now it's time to configure the API settings. 
-
-1. Select **Settings** in menu.
-
-1. Deselect the **Subscription required** checkbox.
-
-1. Select **Save**.
 
 ## Test the API
 
