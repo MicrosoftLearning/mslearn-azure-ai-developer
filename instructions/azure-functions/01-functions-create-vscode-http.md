@@ -79,7 +79,7 @@ Visual Studio Code integrates with Azure Functions Core tools to let you run thi
 
     ![Screenshot of the dialog box prompting for storage account creation.](./media/01/select-storage-acct.png)
 
-1. Output from Core Tools is displayed in the **Terminal** panel. Your app starts in the **Terminal** panel. You can see the URL endpoint of your HTTP-triggered function running locally.
+1. Output from Core Tools is displayed in the **Terminal** panel. You can see the URL endpoint of your HTTP-triggered function running locally.
 
     ![Screenshot of the endpoint of your HTTP-triggered function is displayed in the Terminal panel.](./media/01/run-function-local.png)
 
