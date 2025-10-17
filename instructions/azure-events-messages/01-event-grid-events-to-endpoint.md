@@ -85,7 +85,7 @@ Before subscribing to the custom topic, we need to create the endpoint for the e
     ```bash
     az deployment group create \
         --resource-group $resourceGroup \
-        --template-uri "https://raw.githubusercontent.com/Azure-Samples/azure-event-grid-viewer/main/azuredeploy.json" \
+        --template-uri "https://raw.githubusercontent.com/Azure-Samples/azure-event-grid-viewer/refs/heads/main/azuredeploy.json" \
         --parameters siteName=$siteName hostingPlanName=viewerhost
     
     echo "Your web app URL: ${siteURL}"
