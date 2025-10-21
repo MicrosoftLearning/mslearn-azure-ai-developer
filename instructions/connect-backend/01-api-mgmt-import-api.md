@@ -1,6 +1,6 @@
 ---
 lab:
-    topic: Azure API Management
+    topic: Connect back-end services
     title: 'Import and configure an API with Azure API Management'
     description: 'Learn how to import, publish, and test an API that conforms to the OpenAPI specification.'
 ---
