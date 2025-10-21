@@ -1,6 +1,6 @@
 ---
 lab:
-    topic: Application Insights
+    topic: Monitor and automate
     title: 'Monitor an application with autoinstrumentation'
     description: 'Learn how to monitor an application in Application Insights without modifying code by configuring autoinstrumentation '
 ---

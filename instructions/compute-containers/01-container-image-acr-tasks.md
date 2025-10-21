@@ -1,6 +1,6 @@
 ---
 lab:
-    topic: Azure container services
+    topic: Containerization
     title: 'Build and run a container image with Azure Container Registry Tasks'
     description: 'Learn how to use Azure CLI commands to build and run container images with Azure Container Registry Tasks.'
 ---

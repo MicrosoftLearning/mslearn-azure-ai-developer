@@ -1,6 +1,6 @@
 ---
 lab:
-    topic: Secure solutions in Azure
+    topic: Secure solutions
     title: "Create and retrieve secrets from Azure Key Vault"
     description: "Learn how to create a key vault and create and retrieve secrets with Azure CLI, and also programmatically."
 ---

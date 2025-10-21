@@ -1,6 +1,6 @@
 ---
 lab:
-    topic: Azure container services
+    topic: Containerization
     title: 'Deploy a container to Azure Container Apps with the Azure CLI'
     description: 'Learn how to use Azure CLI commands to create a secure Azure Container Apps environment, and deploy a container.'
 ---
